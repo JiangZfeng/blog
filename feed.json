@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "JiangZifeng‘s Blog",
+    "description": "",
+    "home_page_url": "https://jiangzfeng.github.io/blog",
+    "feed_url": "https://jiangzfeng.github.io/blog/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "JiangZifeng"
+    },
+    "items": [
+        {
+            "id": "https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html",
+            "url": "https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html",
+            "title": "关于作者",
+            "author": {
+                "name": "JiangZifeng"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-06-23T23:28:06+08:00",
+            "date_modified": "2024-06-23T23:28:06+08:00"
+        },
+        {
+            "id": "https://jiangzfeng.github.io/blog/zhu-ye.html",
+            "url": "https://jiangzfeng.github.io/blog/zhu-ye.html",
+            "title": "主页",
+            "author": {
+                "name": "JiangZifeng"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-06-23T23:27:52+08:00",
+            "date_modified": "2024-06-23T23:27:52+08:00"
+        }
+    ]
+}

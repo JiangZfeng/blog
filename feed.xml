@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>JiangZifeng‘s Blog</title>
+    <link href="https://jiangzfeng.github.io/blog/feed.xml" rel="self" />
+    <link href="https://jiangzfeng.github.io/blog" />
+    <updated>2024-06-23T23:28:06+08:00</updated>
+    <author>
+        <name>JiangZifeng</name>
+    </author>
+    <id>https://jiangzfeng.github.io/blog</id>
+
+    <entry>
+        <title>关于作者</title>
+        <author>
+            <name>JiangZifeng</name>
+        </author>
+        <link href="https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html"/>
+        <id>https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html</id>
+
+        <updated>2024-06-23T23:28:06+08:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>主页</title>
+        <author>
+            <name>JiangZifeng</name>
+        </author>
+        <link href="https://jiangzfeng.github.io/blog/zhu-ye.html"/>
+        <id>https://jiangzfeng.github.io/blog/zhu-ye.html</id>
+
+        <updated>2024-06-23T23:27:52+08:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+</feed>
