@@ -3,7 +3,7 @@
     <title>JiangZifeng‘s Blog</title>
     <link href="https://jiangzfeng.github.io/blog/feed.xml" rel="self" />
     <link href="https://jiangzfeng.github.io/blog" />
-    <updated>2024-06-23T23:56:57+08:00</updated>
+    <updated>2024-06-24T00:09:27+08:00</updated>
     <author>
         <name>JiangZifeng</name>
     </author>
@@ -29,15 +29,18 @@
         </author>
         <link href="https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html"/>
         <id>https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html</id>
+        <media:content url="https://jiangzfeng.github.io/blog/media/posts/2/IMG_20240405_162803.jpg" medium="image" />
 
         <updated>2024-06-23T23:28:06+08:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://jiangzfeng.github.io/blog/media/posts/2/IMG_20240405_162803.jpg" alt="" />
                     无名小卒
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://jiangzfeng.github.io/blog/media/posts/2/IMG_20240405_162803.jpg" class="type:primaryImage" alt="" /></p>
                 <p>无名小卒</p>
             ]]>
         </content>
