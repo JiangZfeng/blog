@@ -10,16 +10,31 @@
     },
     "items": [
         {
+            "id": "https://jiangzfeng.github.io/blog/chaosblade-ru-he-jin-xing-cpugu-zhang-zhu-ru.html",
+            "url": "https://jiangzfeng.github.io/blog/chaosblade-ru-he-jin-xing-cpugu-zhang-zhu-ru.html",
+            "title": "Chaosblade 如何进行cpu故障注入",
+            "author": {
+                "name": "JiangZifeng"
+            },
+            "tags": [
+                   "文章"
+            ],
+            "date_published": "2024-06-23T23:56:57+08:00",
+            "date_modified": "2024-06-23T23:56:57+08:00"
+        },
+        {
             "id": "https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html",
             "url": "https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html",
             "title": "关于作者",
+            "summary": "无名小卒",
+            "content_html": "<p>无名小卒</p>",
             "author": {
                 "name": "JiangZifeng"
             },
             "tags": [
             ],
             "date_published": "2024-06-23T23:28:06+08:00",
-            "date_modified": "2024-06-23T23:28:06+08:00"
+            "date_modified": "2024-06-23T23:51:09+08:00"
         },
         {
             "id": "https://jiangzfeng.github.io/blog/zhu-ye.html",

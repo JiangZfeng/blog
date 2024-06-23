@@ -3,12 +3,25 @@
     <title>JiangZifeng‘s Blog</title>
     <link href="https://jiangzfeng.github.io/blog/feed.xml" rel="self" />
     <link href="https://jiangzfeng.github.io/blog" />
-    <updated>2024-06-23T23:28:06+08:00</updated>
+    <updated>2024-06-23T23:56:57+08:00</updated>
     <author>
         <name>JiangZifeng</name>
     </author>
     <id>https://jiangzfeng.github.io/blog</id>
 
+    <entry>
+        <title>Chaosblade 如何进行cpu故障注入</title>
+        <author>
+            <name>JiangZifeng</name>
+        </author>
+        <link href="https://jiangzfeng.github.io/blog/chaosblade-ru-he-jin-xing-cpugu-zhang-zhu-ru.html"/>
+        <id>https://jiangzfeng.github.io/blog/chaosblade-ru-he-jin-xing-cpugu-zhang-zhu-ru.html</id>
+            <category term="文章"/>
+
+        <updated>2024-06-23T23:56:57+08:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
     <entry>
         <title>关于作者</title>
         <author>
@@ -18,8 +31,16 @@
         <id>https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html</id>
 
         <updated>2024-06-23T23:28:06+08:00</updated>
-            <summary></summary>
-        <content></content>
+            <summary>
+                <![CDATA[
+                    无名小卒
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>无名小卒</p>
+            ]]>
+        </content>
     </entry>
     <entry>
         <title>主页</title>
