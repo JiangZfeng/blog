@@ -39,6 +39,8 @@
             "id": "https://jiangzfeng.github.io/blog/chaosblade-ru-he-jin-xing-cpugu-zhang-zhu-ru.html",
             "url": "https://jiangzfeng.github.io/blog/chaosblade-ru-he-jin-xing-cpugu-zhang-zhu-ru.html",
             "title": "Chaosblade 如何进行cpu故障注入",
+            "summary": "引言 chaosblade是阿里开源的一款混沌演练工具，能够简便快捷地注入各种故障，包含丰富的场景。本文将以最简单的cpu故障注入场景为切入点，解析chaosblade 如何进行故障注入，并探讨在物理机和容器环境下进行cpu故障注入的区别。 如何对cpu注入故障？在chaosblade中这非常简单，只需要使用命令行工具blade，执行命令: blade create cpu fullload --percent 50 --cpu-count 2 --cpu-list 0,3 --timeout 100 这是chaosblade中一个经典的故障注入命令，该命令的结果是创建并执行一个cpu故障注入，该故障为对索引为0,3的cpu核心，注入50%的cpu负载，故障在100秒后恢复。 诚然我们可以通过命令行工具方便地注入故障，但是故障注入到底是如何产生的，其底层原理是什么？这引申出4个问题： 以下将从这4个问题解析chaosblade的cpu故障注入本质。 以下是一个简单地拉高cpu使用率的示例： func main(){ cpuCount := runtime.cpuNum() }",
+            "content_html": "<h1>引言</h1>\n<p>chaosblade是阿里开源的一款混沌演练工具，能够简便快捷地注入各种故障，包含丰富的场景。本文将以最简单的cpu故障注入场景为切入点，解析chaosblade 如何进行故障注入，并探讨在物理机和容器环境下进行cpu故障注入的区别。</p>\n<h1>如何对cpu进行故障注入</h1>\n<p>如何对cpu注入故障？在chaosblade中这非常简单，只需要使用命令行工具blade，执行命令:</p>\n<pre class=\"language-bash\"><code>blade create cpu fullload --percent 50 --cpu-count 2 --cpu-list 0,3 --timeout 100</code></pre>\n<p>这是chaosblade中一个经典的故障注入命令，该命令的结果是创建并执行一个cpu故障注入，该故障为对索引为0,3的cpu核心，注入50%的cpu负载，故障在100秒后恢复。</p>\n<p>诚然我们可以通过命令行工具方便地注入故障，但是故障注入到底是如何产生的，其底层原理是什么？这引申出4个问题：</p>\n<ol>\n<li>如何注入cpu故障</li>\n<li>如何指定故障cpu负载</li>\n<li>如何对特定cpu核心注入故障</li>\n<li>故障如何恢复</li>\n</ol>\n<p>以下将从这4个问题解析chaosblade的cpu故障注入本质。</p>\n<h2>如何注入cpu故障</h2>\n<p>以下是一个简单地拉高cpu使用率的示例：</p>\n<pre class=\"language-go\"><code>func main(){\n cpuCount := runtime.cpuNum()\n}</code></pre>",
             "author": {
                 "name": "JiangZifeng"
             },
@@ -47,7 +49,7 @@
                    "chaosblade"
             ],
             "date_published": "2024-06-23T23:56:57+08:00",
-            "date_modified": "2024-06-24T22:45:36+08:00"
+            "date_modified": "2024-06-24T23:22:13+08:00"
         },
         {
             "id": "https://jiangzfeng.github.io/blog/guan-yu-zuo-zhe.html",
