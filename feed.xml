@@ -3,206 +3,141 @@
     <title>JiangZifeng‘s Blog</title>
     <link href="https://jiangzfeng.github.io/blog/feed.xml" rel="self" />
     <link href="https://jiangzfeng.github.io/blog" />
-    <updated>2024-06-25T22:23:20+08:00</updated>
+    <updated>2024-07-08T00:22:31+08:00</updated>
     <author>
         <name>JiangZifeng</name>
     </author>
     <id>https://jiangzfeng.github.io/blog</id>
 
     <entry>
-        <title>publii资源链接</title>
+        <title>什么是ElasticSearch</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/publiizi-yuan-lian-jie.html"/>
-        <id>https://jiangzfeng.github.io/blog/publiizi-yuan-lian-jie.html</id>
-            <category term="publii"/>
+        <link href="https://jiangzfeng.github.io/blog/shi-me-shi-elasticsearch.html"/>
+        <id>https://jiangzfeng.github.io/blog/shi-me-shi-elasticsearch.html</id>
+            <category term="搜素"/>
+            <category term="ElasticSearch"/>
 
-        <updated>2024-06-25T22:23:13+08:00</updated>
+        <updated>2024-07-08T00:22:31+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
     <entry>
-        <title>如何使用github+publii构建个人网站</title>
+        <title>Mysql安装部署</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/ru-he-shi-yong-githubpubliigou-jian-ge-ren-wang-zhan.html"/>
-        <id>https://jiangzfeng.github.io/blog/ru-he-shi-yong-githubpubliigou-jian-ge-ren-wang-zhan.html</id>
-            <category term="publii"/>
+        <link href="https://jiangzfeng.github.io/blog/mysqlan-zhuang-bu-shu.html"/>
+        <id>https://jiangzfeng.github.io/blog/mysqlan-zhuang-bu-shu.html</id>
+            <category term="数据库"/>
 
-        <updated>2024-06-25T22:22:45+08:00</updated>
-            <summary>
-                <![CDATA[
-                    参考链接 Publii+ GitHub：免费搭建个人博客网站，无需服务器和域名 - 小羿 (xiaoyi.vc)
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1>参考链接</h1>
-<p><a href="https://xiaoyi.vc/publii-github.html">Publii+ GitHub：免费搭建个人博客网站，无需服务器和域名 - 小羿 (xiaoyi.vc)</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>快速解析json内容</title>
-        <author>
-            <name>JiangZifeng</name>
-        </author>
-        <link href="https://jiangzfeng.github.io/blog/kuai-su-jie-xi-jsonnei-rong.html"/>
-        <id>https://jiangzfeng.github.io/blog/kuai-su-jie-xi-jsonnei-rong.html</id>
-            <category term="Java"/>
-
-        <updated>2024-06-25T22:08:44+08:00</updated>
-            <summary>
-                <![CDATA[
-                    有时候我们需要从一个复杂的json中快速解析出某一部分内容，如果使用一般的方式去逐层解析会非常麻烦，这里介绍使用JSONPath的方式来解析json。 例如有一个复杂的json，有5层嵌套，此时我们想获取第5层的machines的json数组。 { "layer1": { "layer2": { "layer3": { "layer4": { "layer5": { "xxx": "xxx", "machines": [ "127.0.0.1", "172.10.10.1" ]&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>有时候我们需要从一个复杂的json中快速解析出某一部分内容，如果使用一般的方式去逐层解析会非常麻烦，这里介绍使用JSONPath的方式来解析json。</p>
-<p>例如有一个复杂的json，有5层嵌套，此时我们想获取第5层的machines的json数组。</p>
-<pre class="language-json"><code>{
-    "layer1": {
-        "layer2": {
-            "layer3": {
-                "layer4": {
-                    "layer5": {
-                        "xxx": "xxx",
-                        "machines": [
-                            "127.0.0.1",
-                            "172.10.10.1"
-                        ]
-                    }
-                }
-            }
-        }
-    }
-}</code></pre>
-<p>一层一层去获取JSONObject再解析出来未免太过麻烦，对于这种场景，我们可以使用JSONPath直接定位到需要的json数据。</p>
-<p>直接上代码：</p>
-<pre class="language-java"><code>package org.example;
-
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.JSONPath;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
-public class Main {
-    public static void main(String[] args) throws IOException {
-        int count;
-        String contentPath = new String(Files.readAllBytes(Paths.get("/youPath/youJson.json")));
-        JSONObject jsonObject = JSONObject.parseObject(contentPath);
-        String jsonPath = "$.layer1.layer2.layer3.layer4.layer5";
-        JSONObject appObjects = (JSONObject) JSONPath.eval(jsonObject,jsonPath);
-        for (String appId : appObjects.keySet()) {
-            JSONObject entry = (JSONObject) appObjects.get(appId);
-            JSONArray machines = (JSONArray) entry.get("machines");
-            count += machines.size();
-
-        }
-}</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Webpack打包机制解析</title>
-        <author>
-            <name>JiangZifeng</name>
-        </author>
-        <link href="https://jiangzfeng.github.io/blog/webpackda-bao-ji-zhi-jie-xi.html"/>
-        <id>https://jiangzfeng.github.io/blog/webpackda-bao-ji-zhi-jie-xi.html</id>
-
-        <updated>2024-06-25T22:07:48+08:00</updated>
+        <updated>2024-07-08T00:21:22+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
     <entry>
-        <title>vue项目构建配置</title>
+        <title>Redis安装部署</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/vuexiang-mu-gou-jian-pei-zhi.html"/>
-        <id>https://jiangzfeng.github.io/blog/vuexiang-mu-gou-jian-pei-zhi.html</id>
-            <category term="vue"/>
+        <link href="https://jiangzfeng.github.io/blog/redisan-zhuang-bu-shu.html"/>
+        <id>https://jiangzfeng.github.io/blog/redisan-zhuang-bu-shu.html</id>
 
-        <updated>2024-06-25T22:07:28+08:00</updated>
-            <summary>
-                <![CDATA[
-                    参考链接 vue-cli环境变量与模式_vue-cli-service build --mode staging-CSDN博客
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1>参考链接</h1>
-<p><a href="https://blog.csdn.net/weixin_42752574/article/details/115818190">vue-cli环境变量与模式_vue-cli-service build --mode staging-CSDN博客</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>vue项目环境配置</title>
-        <author>
-            <name>JiangZifeng</name>
-        </author>
-        <link href="https://jiangzfeng.github.io/blog/vuexiang-mu-huan-jing-pei-zhi.html"/>
-        <id>https://jiangzfeng.github.io/blog/vuexiang-mu-huan-jing-pei-zhi.html</id>
-
-        <updated>2024-06-25T22:07:10+08:00</updated>
+        <updated>2024-07-08T00:20:53+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
     <entry>
-        <title>如何搭建一个vue项目</title>
+        <title>什么是Redis</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/ru-he-da-jian-yi-ge-vuexiang-mu.html"/>
-        <id>https://jiangzfeng.github.io/blog/ru-he-da-jian-yi-ge-vuexiang-mu.html</id>
-            <category term="vue"/>
+        <link href="https://jiangzfeng.github.io/blog/shi-me-shi-redis.html"/>
+        <id>https://jiangzfeng.github.io/blog/shi-me-shi-redis.html</id>
+            <category term="Redis"/>
 
-        <updated>2024-06-25T22:05:06+08:00</updated>
+        <updated>2024-07-08T00:20:42+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
     <entry>
-        <title>Vue</title>
+        <title>什么是Nginx</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/vue.html"/>
-        <id>https://jiangzfeng.github.io/blog/vue.html</id>
+        <link href="https://jiangzfeng.github.io/blog/shi-me-shi-nginx.html"/>
+        <id>https://jiangzfeng.github.io/blog/shi-me-shi-nginx.html</id>
+            <category term="nginx"/>
 
-        <updated>2024-06-25T22:03:55+08:00</updated>
+        <updated>2024-07-08T00:19:59+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
     <entry>
-        <title>如何将xml转换为excel表格</title>
+        <title>Springboot接入XXL-Job</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/ru-he-jiang-xmlzhuan-huan-wei-excelbiao-ge.html"/>
-        <id>https://jiangzfeng.github.io/blog/ru-he-jiang-xmlzhuan-huan-wei-excelbiao-ge.html</id>
-            <category term="Java"/>
+        <link href="https://jiangzfeng.github.io/blog/springbootjie-ru-xxl-job.html"/>
+        <id>https://jiangzfeng.github.io/blog/springbootjie-ru-xxl-job.html</id>
+            <category term="XXL-Job"/>
+            <category term="SpringBoot"/>
 
-        <updated>2024-06-24T22:46:26+08:00</updated>
+        <updated>2024-07-08T00:19:26+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
     <entry>
-        <title>Nacos 推空保护机制</title>
+        <title>SpringBoot接入Nacos</title>
         <author>
             <name>JiangZifeng</name>
         </author>
-        <link href="https://jiangzfeng.github.io/blog/nacos-tui-kong-bao-hu-ji-zhi.html"/>
-        <id>https://jiangzfeng.github.io/blog/nacos-tui-kong-bao-hu-ji-zhi.html</id>
-            <category term="Java"/>
+        <link href="https://jiangzfeng.github.io/blog/springbootjie-ru-nacos.html"/>
+        <id>https://jiangzfeng.github.io/blog/springbootjie-ru-nacos.html</id>
+            <category term="SpringBoot"/>
 
-        <updated>2024-06-24T22:45:29+08:00</updated>
+        <updated>2024-07-08T00:19:05+08:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>自定义Grafana插件</title>
+        <author>
+            <name>JiangZifeng</name>
+        </author>
+        <link href="https://jiangzfeng.github.io/blog/zi-ding-yi-grafanacha-jian.html"/>
+        <id>https://jiangzfeng.github.io/blog/zi-ding-yi-grafanacha-jian.html</id>
+            <category term="Grafana"/>
+
+        <updated>2024-07-08T00:18:16+08:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>Grafana插件获取</title>
+        <author>
+            <name>JiangZifeng</name>
+        </author>
+        <link href="https://jiangzfeng.github.io/blog/grafanacha-jian-huo-qu.html"/>
+        <id>https://jiangzfeng.github.io/blog/grafanacha-jian-huo-qu.html</id>
+            <category term="监控"/>
+            <category term="Grafana"/>
+
+        <updated>2024-07-08T00:17:54+08:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>Python基础教程</title>
+        <author>
+            <name>JiangZifeng</name>
+        </author>
+        <link href="https://jiangzfeng.github.io/blog/pythonji-chu-jiao-cheng.html"/>
+        <id>https://jiangzfeng.github.io/blog/pythonji-chu-jiao-cheng.html</id>
+            <category term="Python"/>
+
+        <updated>2024-07-08T00:17:16+08:00</updated>
             <summary></summary>
         <content></content>
     </entry>
